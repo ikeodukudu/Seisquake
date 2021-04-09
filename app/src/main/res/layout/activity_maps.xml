@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+      NAME - IKEOLUWA AJIBOLA ODUKUDU
+      MATRIC NO - S1702414
+-->
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/vwSwitch"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/screen1Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Map Screen"
+            android:textSize="20dip" />
+
+        <Button
+            android:id="@+id/mapScreenButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Go To Map Options Screen"
+            android:textSize="20dip" />
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapsActivity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/screen2Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Map Options Screen"
+            android:textSize="20dip" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Select the map Type" />
+
+        <RadioGroup
+            android:id="@+id/mapTypeGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/normalViewRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal" />
+
+            <RadioButton
+                android:id="@+id/terrainViewRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terrain" />
+
+            <RadioButton
+                android:id="@+id/satelliteViewRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Satellite" />
+
+            <RadioButton
+                android:id="@+id/hybridViewRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hybrid" />
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/panZoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pan/Zoom" />
+
+        <Button
+            android:id="@+id/mapScreenOptionsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Goto Map Screen"
+            android:textSize="20dip" />
+    </LinearLayout>
+</ViewSwitcher>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_timeline"
+        android:enabled="true"
+        android:icon="@drawable/timeline_icon"
+        android:title="Timeline" />
+    <item
+        android:id="@+id/navigation_search"
+        android:enabled="true"
+        android:icon="@drawable/search_icon"
+        android:title="Search" />
+    <item
+        android:id="@+id/navigation_map_view"
+        android:enabled="true"
+        android:icon="@drawable/map_icon"
+        android:title="Map View" />
+</menu>
